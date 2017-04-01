@@ -22,4 +22,10 @@
         android:layout_marginTop="30dp"
         android:id="@+id/update_button"
         android:text="UPDATE"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="new heatmap"
+        android:id="@+id/newheatmap"/>
 </RelativeLayout>
