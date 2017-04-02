@@ -13,42 +13,46 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/finish_button"
         android:textStyle="bold"
-        android:text="Finish"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Scan Point"
-        android:enabled="false"
-        android:layout_above="@+id/finish_button"
-        android:id="@+id/scan_now"/>
+        android:text="Calculate"/>
 
-    <com.shemeshapps.dragonhackswifi.DrawImageView
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/scan_now"
-        android:id="@+id/floorplan_image"
+        android:layout_above="@+id/finish_button"
+        android:id="@+id/floorplan_image2"
         android:adjustViewBounds="true"/>
 
     <ca.hss.heatmaplib.HeatMap
-        android:id="@+id/heatmap"
+        android:id="@+id/heatmap2"
         android:layout_width="match_parent"
-        android:layout_alignLeft="@+id/floorplan_image"
-        android:layout_alignRight="@+id/floorplan_image"
-        android:layout_alignTop="@+id/floorplan_image"
-        android:layout_alignBottom="@+id/floorplan_image"
+        android:layout_alignLeft="@+id/floorplan_image2"
+        android:layout_alignRight="@+id/floorplan_image2"
+        android:layout_alignTop="@+id/floorplan_image2"
+        android:layout_alignBottom="@+id/floorplan_image2"
         android:layout_height="match_parent"
         app:minOpacity="10"
         app:maxOpacity="255" />
 
+    <com.shemeshapps.dragonhackswifi.DrawImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/floorplan_image2"
+        android:layout_alignRight="@+id/floorplan_image2"
+        android:layout_alignTop="@+id/floorplan_image2"
+        android:layout_alignBottom="@+id/floorplan_image2"
+        android:layout_above="@+id/finish_button"
+        android:id="@+id/add_frequent"
+        />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/floorplan_image"
+        android:layout_above="@+id/floorplan_image2"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black"
-        android:text="Tap your location and click scan"
+        android:text="Tap Frequent used locations"
         android:textSize="18sp"/>
 
 </RelativeLayout>

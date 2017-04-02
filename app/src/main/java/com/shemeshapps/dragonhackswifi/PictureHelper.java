@@ -37,9 +37,8 @@ public class PictureHelper {
     public final static int PICTURE_CROPPED= 47;
 
 
-    public static void getPicture(final Activity a, final String filename)
+    public static void getPicture(final Activity a)
     {
-        final File f = getFileFromName(a, filename);
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType("image/*");
         a.startActivityForResult(intent, PICTURE_CHOSEN);

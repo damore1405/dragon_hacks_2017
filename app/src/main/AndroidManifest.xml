@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateHeatMap" />
-        <activity android:name=".HeatMapFloor"></activity>
+        <activity android:name=".HeatMapFloor" />
+        <activity android:name=".LiveScan" />
+        <activity android:name=".RouterFinder"></activity>
     </application>
 
 </manifest>

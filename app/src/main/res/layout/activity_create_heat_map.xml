@@ -9,5 +9,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.shemeshapps.dragonhackswifi.CreateHeatMap">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heatmapName"
+        android:hint="Heat Map Name"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heatmapName"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upload_button"
+        android:text="upload floorplan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload_path"
+        android:layout_below="@+id/upload_button"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_button"
+        android:layout_alignParentBottom="true"
+        android:text="next"/>
 
 </RelativeLayout>
